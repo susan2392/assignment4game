@@ -49,7 +49,7 @@ public class Main {
                     cdv = game.getDiceValues();
                     
                     System.out.printf("Rolled %s, %s, %s\n",
-                    		cdv.get(0), cdv.get(1), cdv.get(2));
+                    		cdv.get(0), cdv.get(1), cdv.get(2)); //bug 3:Win loss ratio is not same as the required level
                     
                     if (winnings > 0) {
 	                    System.out.printf("%s won %d, balance now %d\n\n",
