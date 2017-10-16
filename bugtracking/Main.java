@@ -74,7 +74,7 @@ public class Main {
             totalLosses += loseCount;
 
             String ans = console.readLine();
-            if (ans.equals("q")) break;
+            if (ans.equals("q")) break;    //BUG 10: doesnot show any information on to continue or end the code
         } //while true
         
         System.out.println(String.format("Overall win rate = %.1f%%", (float)(totalWins * 100) / (totalWins + totalLosses)));
