@@ -14,9 +14,7 @@ public class Dice {
 		return DiceValue.getRandom();
 	}		
 	/*
-        Fixed bug 4: The dice will have a different throw each time now.
-        a new method was created to set the dice value as d.
-        This will be used in the Game class.
+        Fixed bug 4: The result will be different most of the time.
         */
         public void setValue(DiceValue d) {  
 		value = d;
