@@ -13,16 +13,15 @@ public class Main {
                 Scanner reader = new Scanner(System.in);
                 
                 /*
-                Fixed bug 8: The program now asks for the age.
-                The age is then used in a conditional if statement.
-                if it is 18 or greatr the game proceeds otherwise it exits.
+                Fixed bug 9: The program now asks for the age.
+                if statement to check whether the person is allowed to continue or not..
+                
                 */
                 System.out.println("Please enter your age: ");
 			age = reader.nextInt();
                         
                 /*
-                 Fixed bug 9: The program asks for the name throuh a scanner input.
-                        It is stored in pName and used later in the game.
+                 Fixed bug 7: The program asks for the name 
                 */       
                 System.out.println("Please enter your name: ");
                     String pName = reader.next(); 
@@ -36,16 +35,13 @@ public class Main {
                     while (playing){
                     
                     /*
-                    Fixed Bug 10: The following asks an input from player as balance and stores
-                        it in balance.
+                    Fixed Bug 8: The following asks for balance 
                     */
                     System.out.println("Please enter your balance: ");
                     int balance = reader.nextInt();
                     
-                    /*
-                    Fixed bug 11: The program asks the user for the bet value before starting the game.
-                    The bet value is stored in pBet and is used later.
-                    */
+                    
+                    
                     System.out.println("Please enter your bet: ");
                     int pBet = reader.nextInt(); 
             
@@ -65,7 +61,7 @@ public class Main {
                         int loseCount = 0;
                         
                         //starting game
-                        for (int i = 1; i < 100; i++){ //Fixed bug 7: The first game is now titled "Game 1" 
+                        for (int i = 1; i < 100; i++){  
                             
                             
                             int limit = 0;
@@ -90,7 +86,7 @@ public class Main {
                 	
                                 int winnings = game.playRound(player, pick, bet);
                                 
-                                /**Fixed Bug 3: Odds will now be correct (i-e ~ 0.42)
+                                /**Fixed Bug 3: Probability is equal to 0.42 (i-e ~ 0.42)
                                  * The following method uses an if statement that checks if the odds are higher than
                                  * 0.42. If they are then the dice are thrown again before showing to the user.
                                  * This ensure that the odds don't go higher than 42%.
@@ -133,7 +129,7 @@ public class Main {
                         totalWins += winCount;
                         totalLosses += loseCount;
                         
-                        /*Fixed bug 12 + 13: The followin displays the user a statement asking to
+                        /*Fixed bug 10: The followin displays the user a statement asking to
                         play again (y) or quit (q)
                         If the player plays again it asks for the balance and bet
                         if the player quits the build ends
