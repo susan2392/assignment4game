@@ -33,7 +33,7 @@ public class Game {
 		    
 		int matches = 0;
 		for ( Dice d : dice) {
-			d.roll();
+			d.roll();  //Bug 6: The order of betting is consistent.
 			if (d.getValue().equals(pick)) { 
 				matches += 1;
 			}
