@@ -36,7 +36,7 @@ public class Player {
 		balance = balance - bet;
 	}
 	
-	public void receiveWinnings(int winnings) {
+	public void receiveWinnings(int winnings) {  //Bug 1: no winning money added on the available money.
 		if (winnings < 0) throw new IllegalArgumentException("Winnings cannot be negative.");
 		balance = balance + winnings;		
 	}
