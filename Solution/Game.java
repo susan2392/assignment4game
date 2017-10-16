@@ -33,7 +33,7 @@ public class Game {
 		    
 		int matches = 0;
 		for ( Dice d : dice) {
-			d.setValue(d.roll()); //Fixed bug 4: the value of d is taken from the Dice class.
+			d.setValue(d.roll()); //Fixed bug 4: the value  d is taken from the Dice class.
 			if (d.getValue().equals(pick)) { 
 				matches += 1;
 			}
