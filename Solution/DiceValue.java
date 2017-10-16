@@ -23,7 +23,7 @@ public enum DiceValue {
 	}
 	
 	public static DiceValue getRandom() {
-		int random = RANDOM.nextInt(DiceValue.SPADE.ordinal()+ 1); //Fixed bug 6: Spades will now be used in throws.
+		int random = RANDOM.nextInt(DiceValue.SPADE.ordinal()+ 1); //Fixed bug 6: Spades cacn be seen in the program now.
 		return values()[random];
 	}
 	
