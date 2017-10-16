@@ -10,7 +10,7 @@ public class Dice {
 		return value;
 	}
 
-	public DiceValue roll() {
+	public DiceValue roll() {  //Bug 6: The betting from player is consistent
 		return DiceValue.getRandom();
 	}		
 	
